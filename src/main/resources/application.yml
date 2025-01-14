@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: ${DATABASE_URL:jdbc:mysql://192.168.200.2:3306/istory}
+    url: ${DATABASE_URL:jdbc:mysql://localhost:3306/istory}
     username: ${MYSQL_USERNAME:root}
     password: ${MYSQL_PASSWORD:admin123}
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -9,11 +9,12 @@ spring:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
-  application:
+  application: 
     name: USER-SERVICE
   jwt:
     issuer: user@gmail.com
     secret_key: study-springboot
+    
 #spring:
 #  jpa:
 #    show-sql: true
@@ -52,3 +53,5 @@ spring:
 #  jwt:
 #    issuer: dangtong@gmail.com
 #    secret_key: study-springboot
+
+#192.168.200.2
